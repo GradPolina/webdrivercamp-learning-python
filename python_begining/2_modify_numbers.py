@@ -18,3 +18,11 @@ num_around =round(num,2)
 text = "Learning Python is fun "
 print("{0} {1} %".format(text,num_round))
 
+# option 4
+print("Learning Python is fun %.2f $" % (3.141546458))
+
+# option 5
+num = 3.141547895879412
+print ("Learning Python is fun {:2f} $".format(num))
+
+
