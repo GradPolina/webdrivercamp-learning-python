@@ -1,6 +1,7 @@
 i = 0
-while i < 100:    
-      print(i, end = ',', sep='\n')
-      i = i+1
-    
+while i < 99:
+    print(i, sep = '\n', end = ',')
+    i = i+1
+    if i==99:
+       print (i, sep ='\n', end = ' ')
 
