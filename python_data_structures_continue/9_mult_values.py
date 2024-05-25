@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 def mult_values(d):
-    return {key: value * 2 for key, value in d.items()}
+    new_dict = {}
+    for key, value in d.items():
+        new_dict[key] = value * 2
+    return new_dict
 
 
 
