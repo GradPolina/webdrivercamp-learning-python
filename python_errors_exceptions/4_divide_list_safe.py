@@ -1,20 +1,29 @@
 #!/usr/bin/python3
 
 def divide_list_safe(list_1, list_2, list_len):
-    try: 
-        if len(list_1) == len(list_2):
-            for i in range(len(list_1)):
-                list_len.append(list_1[i]/list_2[i])
-        else:
-            for i in range(len(list_1)):
+    list_result = []
+    for i in range(list_len):
+        try: 
+            if i >= len(list_1) or i >= len(list_2):
                 print("out of range")
-                list_len.append(0)
+                list_result.append(0)
+                continue
+            else:
+                list_result.append(list_1[i]/list_2[j])
+            try:       
+                res=list_1[i]/list_2[i]
+             except TypeError:
+                 print("wrong type")
+                 list_result.append(0)
+                 continue
 
-    except ZeroDivisionError:
-        print("Division by 0")
-    finally:
-        pass
-    return list_len
+         except ZeroDivisionError:
+               print("Division by 0")
+               list_result.append(0)
+         finally:
+               pass
+
+         return list_sesult
 
   
 
