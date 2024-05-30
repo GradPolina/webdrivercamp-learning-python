@@ -1,15 +1,16 @@
 def list_int_print(lst=[], i=0):
     count = 0
     try:
-        for idx in range(i):
+        for x in range(i):
             try:
-                print(f"{lst[idx]:d}", end=" ")
+                print(f"{lst[x]:d}", end=' ')
                 count += 1
             except (ValueError, TypeError):
-                pass
+                continue
         print()  
-    except IndexError:
-        print("\nIndex out of range")
+    
+    except:
+        print()
     return count
 
 if __name__ == "__main__":
