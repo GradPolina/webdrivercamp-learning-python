@@ -1,1 +1,4 @@
-
+//div[@id="vl-flyout-nav"]//li[contains(@class, "vl-flyout-nav__js-tab") or @class="savedTab"]
+//div[@class="x-refine__item--toggle"]
+//div[@class="x-refine__item--toggle"][contains(., "Brand")]/following-sibling::div//li
+//div[@class="x-refine__item--toggle"][contains(., "Color")]/following-sibling::div//li
