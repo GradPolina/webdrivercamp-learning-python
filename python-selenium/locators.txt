@@ -1,4 +1,8 @@
-//div[@id="vl-flyout-nav"]//li[contains(@class, "vl-flyout-nav__js-tab") or @class="savedTab"]
-//div[@class="x-refine__item--toggle"]
-//div[@class="x-refine__item--toggle"][contains(., "Brand")]/following-sibling::div//li
-//div[@class="x-refine__item--toggle"][contains(., "Color")]/following-sibling::div//li
+0.//div[@id="vl-flyout-nav"]//li[contains(@class, "vl-flyout-nav__js-tab") or @class="savedTab"]
+1.//div[@class="x-refine__item--toggle"]
+2.1.//div[@class="x-refine__item--toggle"][contains(., "Brand")]/following-sibling::div//li
+2.2.//div[@class="x-refine__item--toggle"][contains(., "Color")]/following-sibling::div//li
+3.1. //div[@class="x-refine__item--toggle"][contains(., "Brand")]/following-sibling::div//li[contains(., "adidas")]
+3.2. //div[@class="x-refine__item--toggle"][contains(., "Color")]/following-sibling::div//li[contains(., "Blue")]
+5. //div[contains(@class, "gh-submenu gh-eb-o")]//li
+4.//div[@class="s-item__title"]//span[contains(., "Shoes")]
